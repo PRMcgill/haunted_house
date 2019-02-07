@@ -18,11 +18,13 @@ def make_choice():
     doors = int(options)
 
     if doors > 11 or doors < 1:
-        print('You ran into the wall. Pick a door. \n')
+
+        print('You ran into the wall. Pick a door 1-11. \n')
     elif doors % 2 == 0:
         print('Boo! You have been scared to death by a ' + random.choice(monster) + '\n')
     else:
-        print('You have made it through the House! You have been spared!\n')
+        print('You have made it through the House! You have been spared! \n')
+
 
 import random
 
@@ -33,7 +35,13 @@ while running:
     prompt()
     options = input('Pick a door number to walk through: \n')
     make_choice()
+<<<<<<< HEAD
     choice = input('Continue? Yes or No? \n')
     if choice == 'No':
         running = False
+=======
+    print('Do you wish to continue?')
+    try_again = input
+    input('Do you wish to continue? \n')
+>>>>>>> 99fb0f2b520c012aacce196d42072700895a8594
 
