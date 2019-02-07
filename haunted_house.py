@@ -1,12 +1,12 @@
 
-print('You have entered into a haunted house. There are 11 doors.')
+print('You have entered into a haunted house. There are 2 doors.')
 
-options = int(input('Pick a door number to walk through: '))
+options = input('Pick a door number to walk through: ')
 
-
+doors = int(options)
 for pathing in options:
-    if options % 2 == 0:
-        print('You have been scared to death by a Ghost!')
+    if doors == 2:
+        print('Boo! You have been scared to death by a Ghost!')
     else:
         print('You have made it through the House! You have been spared!')
 
