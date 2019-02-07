@@ -12,10 +12,10 @@ def prompt():
         'Door 10 \n'
         'Door 11 \n'
             )
-def make_choice():
+def make_choice(option):
     monster = ['Ghoul', 'Ghost', 'Cyclop', 'Zombie']
 
-    doors = int(options)
+    doors = int(option)
 
     if doors > 11 or doors < 1:
 
@@ -34,14 +34,10 @@ running = True
 while running:
     prompt()
     options = input('Pick a door number to walk through: \n')
-    make_choice()
-<<<<<<< HEAD
+    make_choice(options)
     choice = input('Continue? Yes or No? \n')
     if choice == 'No':
         running = False
-=======
-    print('Do you wish to continue?')
-    try_again = input
-    input('Do you wish to continue? \n')
->>>>>>> 99fb0f2b520c012aacce196d42072700895a8594
+
+
 
